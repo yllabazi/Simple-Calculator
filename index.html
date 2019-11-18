@@ -11,38 +11,41 @@
     <header>
         <h2>A basic JS calculator created as part of TheOdinProject curriculum. Enjoy!</h2>
     </header>
-    <div class="content">
-        <div class="display"><p id="disPar"></p></div>
-        <div class="operations">
-            <div class="buttons"><button class="gray">C</button></div>
-            <div class="buttons"><button class="gray">AC</button></div>
-            <div class="buttons"><button class="gray">Clear</button></div>
-
-            <div class="buttons"><button class="operator" value="/">/</button></div>
-            <div class="buttons"><button class="number" value="7">7</button></div>
-            <div class="buttons"><button class="number" value="8">8</button></div>
-            
-            <div class="buttons"><button class="number" value="9">9</button></div>
-            <div class="buttons"><button class="operator" value="*">x</button></div>
-            <div class="buttons"><button class="number" value="4">4</button></div>
-
-            <div class="buttons"><button class="number" value="5">5</button></div>
-            <div class="buttons"><button class="number" value="6">6</button></div>
-            <div class="buttons"><button class="operator" value="-">-</button></div>
-
-            <div class="buttons"><button class="number" value="1">1</button></div>
-            <div class="buttons"><button class="number" value="2">2</button></div>
-            <div class="buttons"><button class="number" value="3">3</button></div>
-
-            <div class="buttons"><button class="operator" value="+">+</button></div>
-            <div class="buttons"><button class="number" value="0">0</button></div>
-            <div class="buttons"><button>=</button></div>
-
-            <div class="buttons"><button>.</button></div>
-            <div class="buttons"><button class="operator equal" value="=">=</button></div>
+    <div class="operations">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
         </div>
+        
+        <button data-all-clear class="gray span-two" >AC</button>
+        <button data-delete class="gray">Delete</button>
+        
+        <button data-operation class="operator">/</button>
+
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+
+        <button data-operation class="operator">*</button>
+
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+
+        <button data-operation class="operator">-</button>
+        
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        
+        <button data-operation class="operator">+</button>
+
+        <button data-number class="zero span-two">0</button>
+        
+        <button data-number>.</button>
+        <button data-equals class="operator roundEdge">=</button>
     </div>
 
-    <script src="index.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
